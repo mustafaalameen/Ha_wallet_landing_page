@@ -65,10 +65,15 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    /* background-color: aquamarine; */
+    background-color: black;
+    position: fixed;
+    top: 0%;
+    left: 0%;
     align-items: center;
     padding: 2rem 5rem;
     font-size: 1.2rem;
+    z-index: 1000;
+    width: 100%;
 }
 
 .nav_center {
@@ -78,7 +83,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    flex:1 1 20%;
+    flex: 1 1 20%;
     /* padding:0 2rem; */
 
 }
@@ -107,11 +112,12 @@ nav {
     transition: .3s;
 }
 
-.nav_center li a:hover::after, .nav_center li a:focus::after{
+.nav_center li a:hover::after,
+.nav_center li a:focus::after {
     width: 5px;
 }
 
-.nav_center li a:hover{
+.nav_center li a:hover {
     font-family: ' Cabinet Grotesk2', sans-serif;
 }
 
@@ -122,10 +128,10 @@ nav {
     font-weight: bold;
 }
 
-.nav-end a:hover{
+.nav-end a:hover {
     background-color: var(--secondary-clr);
     border-radius: .4rem;
-    padding: .2rem .7rem ;
+    padding: .2rem .7rem;
 }
 
 .nav-end {
@@ -141,7 +147,8 @@ nav {
     color: white;
 }
 
-.btn-nav:hover, .btn-nav:focus{
+.btn-nav:hover,
+.btn-nav:focus {
     opacity: .5;
 }
 
@@ -622,7 +629,7 @@ nav {
     justify-content: center;
     width: 100%;
 
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .ios-playstore img {
