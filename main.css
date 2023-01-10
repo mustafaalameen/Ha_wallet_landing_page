@@ -78,7 +78,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    /* flex:1 1 20%; */
+    flex:1 1 20%;
     /* padding:0 2rem; */
 
 }
@@ -620,7 +620,9 @@ nav {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    /* background-color: aqua; */
+    width: 100%;
+
+    background-color: aqua;
 }
 
 .ios-playstore img {
@@ -1154,7 +1156,7 @@ footer img[alt*="logo"] {
 .footer--social img:hover {
     /* background-color: var(--secondary-clr); */
     border: 1px solid var(--secondary-clr);
-    padding: 1rem;
+    padding: .5rem;
 
     border-radius: 1rem;
 }
