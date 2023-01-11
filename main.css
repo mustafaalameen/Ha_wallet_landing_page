@@ -287,12 +287,29 @@ nav {
     color: var(--neutral-clr-white);
     /* text-align: center; */
     padding-bottom: 1rem;
+    animation-name: from-bottom-to-top;
 }
 
 .section--header-text {
     text-align: center;
     padding-top: 2rem;
+
     /* padding: 2rem 4.2rem; */
+    animation-name: from-bottom-to-top;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes from-bottom-to-top {
+    from {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+
+    to {
+        top: 0px;
+        opacity: 1;
+    }
 }
 
 .section--header-text h1 {
@@ -333,12 +350,16 @@ nav {
     width: 125px;
     margin: 3rem 2.5rem 2rem;
     cursor: pointer;
+    background-color: var(--neutral-clr-white);
+    transition-property: background-color, width;
+    transition-duration: 1s;
 
 }
 
 .getstarted:hover,
 .getstarted:focus {
     background-color: var(--secondary-clr);
+    width: 150px;
 }
 
 
@@ -394,6 +415,21 @@ nav {
     .section-header-img {
         display: block;
         width: 50%;
+        animation-name: from-right;
+        animation-duration: 2s;
+        animation-delay: 2s;
+    }
+
+    @keyframes from-right {
+        from {
+            transform: translatex(1000px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translatex(0px);
+            opacity: 1;
+        }
     }
 
     .section--header-text {
