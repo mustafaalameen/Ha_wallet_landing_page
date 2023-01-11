@@ -415,15 +415,17 @@ nav {
     .section-header-img {
         display: block;
         width: 50%;
+        opacity: 0;
         animation-name: from-right;
         animation-duration: 2s;
         animation-delay: 2s;
+        animation-fill-mode: forwards;
     }
 
     @keyframes from-right {
         from {
             transform: translatex(1000px);
-            opacity: 0;
+
         }
 
         to {
